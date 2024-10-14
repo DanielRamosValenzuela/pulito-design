@@ -6,12 +6,12 @@
   "files": [
     "dist"
   ],
-  "main": "dist/simple-ui-umd.cjs",
-  "module": "dist/simple-ui.js",
+  "main": "dist/pulito-design-umd.cjs",
+  "module": "dist/pulito-design.js",
   "exports": {
     ".": {
-      "import": "./dist/simple-ui.js",
-      "require": "./dist/simple-ui-umd.cjs"
+      "import": "./dist/pulito-design.js",
+      "require": "./dist/pulito-design-umd.cjs"
     }
   },
   "scripts": {

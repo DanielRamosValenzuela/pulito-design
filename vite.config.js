@@ -12,8 +12,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, "./src/components/index.tsx"),
-            name: "SimpleUI",
-            fileName: "simple-ui",
+            name: "PulitoDesign",
+            fileName: "pulito-design",
         },
         rollupOptions: {
             external: ["react", "react-dom"],
