@@ -1,27 +1,27 @@
-import { defineConfig } from 'vite'
-import path from "path";
-import react from '@vitejs/plugin-react-swc'
-import dts from "vite-plugin-dts";
+import { defineConfig } from 'vite';
+import path from 'path';
+import react from '@vitejs/plugin-react-swc';
+import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "./src/components/index.tsx"),
-      name: "PulitoDesign",
-      fileName: "pulito-design",
+      entry: path.resolve(__dirname, './src/components/index.tsx'),
+      name: 'PulitoDesign',
+      fileName: 'pulito-design',
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+          react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },

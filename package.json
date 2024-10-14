@@ -1,10 +1,11 @@
 {
   "name": "pulito-design",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "dist/tailwind.css"
   ],
   "main": "dist/pulito-design-umd.cjs",
   "module": "dist/pulito-design.js",
@@ -16,7 +17,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build:css": "tailwindcss -i ./src/index.css -o ./dist/tailwind.css --minify",
+    "build": "tsc -b && vite build && npm run build:css",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
