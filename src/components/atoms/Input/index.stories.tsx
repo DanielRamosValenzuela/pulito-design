@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Input } from "./Index";
+import { Input } from ".";
 
 
 const meta: Meta<typeof Input> = {
@@ -14,8 +14,6 @@ const meta: Meta<typeof Input> = {
 export default meta;
 
 type Story = StoryObj<typeof meta>;
-
-// Variantes de Input
 
 export const Outline: Story = {
   args: {
@@ -38,7 +36,6 @@ export const Ghost: Story = {
   },
 };
 
-// Esquemas de Color
 
 export const NavyOutline: Story = {
   args: {
@@ -64,7 +61,6 @@ export const YellowGhost: Story = {
   },
 };
 
-// Tamaños
 
 export const Small: Story = {
   args: {
@@ -86,8 +82,6 @@ export const Large: Story = {
     placeholder: "Large Input",
   },
 };
-
-// Estados
 
 export const Disabled: Story = {
   args: {
